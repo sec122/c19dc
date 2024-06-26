@@ -1,0 +1,20 @@
+---
+author: Erik Fredner
+title: Moving the Capital of US Literature from Boston to New York
+subtitle: Evidence from 11 million Library of Congress records
+date: \today
+lang: en-US
+bibliography: /Users/erik/book/references.bib
+csl: /Users/erik/code/styles/chicago-fullnote-bibliography-short-title-subsequent.csl
+linestretch: 2
+fontfamily: ebgaramond
+fontsize: 12pt
+dpi: 300
+geometry: margin=1in
+papersize: letter
+documentclass: article
+indent: true
+strip-comments: true
+link-citations: true
+link-bibliography: true
+---
