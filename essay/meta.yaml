@@ -5,7 +5,7 @@ subtitle: Evidence from 11 million Library of Congress records
 date: \today
 lang: en-US
 bibliography: /Users/erik/book/references.bib
-csl: /Users/erik/code/styles/chicago-fullnote-bibliography-short-title-subsequent.csl
+csl: /Users/erik/code/styles/chicago-fullnote-bibliography.csl
 linestretch: 2
 fontfamily: ebgaramond
 fontsize: 12pt
