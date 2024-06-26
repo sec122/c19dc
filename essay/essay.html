@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Erik Fredner" />
+  <title>Moving the Capital of US Literature from Boston to New York</title>
+  <style>
+    html {
+      font-size: 12pt;
+      line-height: 2;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Moving the Capital of US Literature from Boston to New
+York</h1>
+<p class="subtitle">Evidence from 11 million Library of Congress
+records</p>
+<p class="author">Erik Fredner</p>
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>Literary historians of the United States broadly agree that, at some
+point during the nineteenth century, New York City overtakes Boston as
+the literary capital of the US. What Pascale Casanova argues Paris is
+for world literature, New York becomes for US literature specifically,
+and, eventually, Anglophone literatures more generally.<span
+class="citation" data-cites="casanovaWorldRepublicLetters2004"><a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></span></p>
+<p>Data recently released by the Library of Congress (LC) allows us to
+assess this historical claim in new ways, but not in the format in which
+it was originally released. By converting this data to a form useful for
+computational literary studies, I have evaluated this geographic shift,
+and made it possible for other scholars of nineteenth century US
+literatures to use the same data for a wide range of purposes. Perhaps
+more importantly, the code that extracted the data used to answer this
+nineteenth century question can be used to get any fields of interest
+from any set of the 11 million book catalog records that the LC has made
+public.</p>
+<p>Nancy Glazener argues that the <em>Atlantic</em> magazine “had
+greater authority over American literature than any other institution
+did” in the latter half of the nineteenth century.<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>
+Because of this, the shifting center of US literary culture from Boston
+to New York City is sometimes personified in <em>Atlantic</em> editor
+William Dean Howells. Howells moved from Ohio to Boston to make his
+literary mark, and then moved from Boston to New York in the 1880s.<a
+href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></p>
+<p>Yet the material infrastructures of literary culture involved in such
+a shift—the means of production, distribution, and the skilled
+workers—could not possibly move as easily as Howells’s prestige. While
+<em>The History of the Book in America</em> has already covered many
+details of these processes, it does not cover the changing imprint
+geographies of US publishing in general and US literary publishing in
+particular, in part because this data was neither publicly available nor
+in a computationally tractable form.<span class="citation"
+data-cites="casperIndustrialBook184018802007 kaestlePrintMotionExpansion2009"><a
+href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a></span></p>
+<h2 id="lc-mds-books-data">LC MDS books data</h2>
+<p>For the first time in 2015 and most recently in 2020, the Library of
+Congress (LC) released its MARC Distribution Services (MDS) books
+dataset to the public, which contains more than 11 million book
+records.<a href="#fn5" class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a> Although these records cannot be
+said to list every relevant book, it nevertheless remains the largest
+such catalog to which there is public access.<a href="#fn6"
+class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<p><a href="https://lccn.loc.gov/07017953">Figure 1</a> shows how one
+very famous record among the 11 million appears on the web.</p>
+<figure>
+<img src="../moby.png" style="width:10cm"
+alt="A screenshot of the LC catalog record for Moby-Dick (1851)." />
+<figcaption aria-hidden="true">A screenshot of the LC catalog record for
+<em>Moby-Dick</em> (1851).</figcaption>
+</figure>
+<p>And here is some of the underlying XML that creates that view of the
+record, and which exemplifies how all of the records are formatted:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">datafield</span><span class="ot"> ind1=</span><span class="st">&quot;1&quot;</span><span class="ot"> ind2=</span><span class="st">&quot;0&quot;</span><span class="ot"> tag=</span><span class="st">&quot;245&quot;</span>&gt;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subfield</span><span class="ot"> code=</span><span class="st">&quot;a&quot;</span>&gt;Moby-Dick :&lt;/<span class="kw">subfield</span>&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subfield</span><span class="ot"> code=</span><span class="st">&quot;b&quot;</span>&gt;or, The whale /&lt;/<span class="kw">subfield</span>&gt;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subfield</span><span class="ot"> code=</span><span class="st">&quot;c&quot;</span>&gt;by Herman Melville ...&lt;/<span class="kw">subfield</span>&gt;</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">datafield</span>&gt;</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">datafield</span><span class="ot"> ind1=</span><span class="st">&quot; &quot;</span><span class="ot"> ind2=</span><span class="st">&quot; &quot;</span><span class="ot"> tag=</span><span class="st">&quot;260&quot;</span>&gt;</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subfield</span><span class="ot"> code=</span><span class="st">&quot;a&quot;</span>&gt;New York :&lt;/<span class="kw">subfield</span>&gt;</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subfield</span><span class="ot"> code=</span><span class="st">&quot;b&quot;</span>&gt;Harper <span class="dv">&amp;amp;</span> Brothers ;&lt;/<span class="kw">subfield</span>&gt;</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subfield</span><span class="ot"> code=</span><span class="st">&quot;a&quot;</span>&gt;London :&lt;/<span class="kw">subfield</span>&gt;</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subfield</span><span class="ot"> code=</span><span class="st">&quot;b&quot;</span>&gt;Richard Bentley,&lt;/<span class="kw">subfield</span>&gt;</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subfield</span><span class="ot"> code=</span><span class="st">&quot;c&quot;</span>&gt;1851.&lt;/<span class="kw">subfield</span>&gt;</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">datafield</span>&gt;</span></code></pre></div>
+<p>All of these records were created by librarians to describe
+“monographs written in nearly all the world’s languages and published
+anywhere” including “Cataloging in Publication (CIP) records and minimal
+level cataloging records.”<span class="citation"
+data-cites="BooksAllDatabase2024"><a href="#fn7" class="footnote-ref"
+id="fnref7" role="doc-noteref"><sup>7</sup></a></span> My contribution
+is extracting, cleaning, and analyzing the data that librarians created
+in a way that is immediately useful for scholars of US literature in the
+long nineteenth century, provides both a working model and code for
+those in any other field who wish to work with any of the millions of LC
+MARC records I do not consider here, and publicizes the uses of this
+resource to address questions of literary history.</p>
+<h2 id="measuring-imprint-geographies">Measuring imprint
+geographies</h2>
+<p>Americanists will perhaps be excessively familiar with the “PS”
+subclass of the LC’s Language and Literature classification (“P”), which
+I use to study the changing imprint geographies of US literature over
+the long nineteenth century.<span class="citation"
+data-cites="LibraryCongressClassification2024"><a href="#fn8"
+class="footnote-ref" id="fnref8"
+role="doc-noteref"><sup>8</sup></a></span> Generally, I check every
+classification value of every record to see if any of its
+classifications are part of the “PS” subclass. I then extract selected
+fields from the relevant records. Finally, I apply two cleaning steps to
+the year and place of publication to make them computationally tractable
+for my purposes. Readers interested in the details should consult <a
+href="https://github.com/erikfredner/c19dc">the repository</a>, which
+includes code to reproduce these results locally, and which can be
+trivially modified to extract records and fields in which they may be
+interested.<span class="citation"
+data-cites="frednerGettingNineteenthCentury2024"><a href="#fn9"
+class="footnote-ref" id="fnref9"
+role="doc-noteref"><sup>9</sup></a></span></p>
+<p>Given the received narrative from US literary histories, I expected
+to see New York’s publishing dominance rise consistently over the
+century, reaching a more or less unchallenged position after
+Reconstruction begins in 1865. But the data only partially support that
+narrative.</p>
+<figure>
+<img src="../lc_ps_city.png"
+alt="Five-year rolling average of the total number of LC American literature books, 1745-1945." />
+<figcaption aria-hidden="true">Five-year rolling average of the total
+number of LC American literature books, 1745-1945.</figcaption>
+</figure>
+<p>The graph shows the absolute growth in the amount of annual
+publishing in American literature. Note that this represents cataloged
+publications, not sales or any other measure of readership beyond
+cataloging librarians’ judgment. It is quite likely that books printed
+in New York sold better than books printed in, say, Indianapolis, which
+is the eighth most frequent place of publication in this period. But
+this data cannot tell us much about that disparity.</p>
+<figure>
+<img src="../lc_city_year_normed.png"
+alt="Five-year rolling average of the proportion of LC American literature books, 1800-1945." />
+<figcaption aria-hidden="true">Five-year rolling average of the
+proportion of LC American literature books, 1800-1945.</figcaption>
+</figure>
+<p>However, the absolute growth in publication makes it difficult to see
+the changing geographies of US imprints. Measuring proportional change
+suggests that serious contestation among Boston, Philadelphia, and New
+York to be the publishing capital of US literature is over as early as
+the 1840s, not in the post-Civil War period as is often assumed. More
+important than revising a timeline, however, is this: The data suggest
+that it is never the case that more than half of US literature has a New
+York imprint. Measured in catalog records, most of US literary
+publishing happens elsewhere. Relatedly, the big surprise of these
+charts is the size of “Other,” which represents every place of
+publication not named in the legend. Up to the 1850s, “Other” was far
+larger than any single city, and, as Boston and Philadelphia decline, it
+keeps pace with (and occasionally exceeds) New York. New York is the
+most important place, but it is far from the only place.</p>
+<p>There is much more to be said about these charts elsewhere. For now,
+suffice it to say that this example shows how one can use the
+transformed MDS Connect data to study questions of historical and
+critical interest for nineteenth century literatures. Other possible
+applications of the data—modeling republications, the distribution of
+unique authors, mining the text of the titles, the distribution of
+publishers, etc.—abound within the data published with this essay. Other
+LC record fields not included like subject headings (e.g., “Ahab,
+Captain (Fictitious character)–Fiction. Mentally ill–Fiction.”) could be
+rich. By means of small adjustments the code in the repository, anyone
+interested in other geographies, other periods, or other fields can
+extract data from any subset of the LC’s 11 million public records.</p>
+<h2 class="unnumbered" id="works-cited">Works Cited</h2>
+<div id="refs" class="references csl-bib-body hanging-indent"
+data-entry-spacing="0" role="list">
+<div id="ref-bentleyLiteraryFormsMass2005a" class="csl-entry"
+role="listitem">
+Bentley, Nancy. <span>“Literary <span>Forms</span> and <span>Mass
+Culture</span>, 1870–1920.”</span> In <em>The <span>Cambridge
+History</span> of <span>American Literature</span>: <span>Volume</span>
+3: <span>Prose</span> Writing, 1860–1920</em>, edited by Sacvan
+Bercovitch, 3:65–286. The <span>Cambridge History</span> of
+<span>American Literature</span>. Cambridge: Cambridge University Press,
+2005.
+</div>
+<div id="ref-BooksAllMDSConnect2020" class="csl-entry" role="listitem">
+<span>“Books All : <span>MDSConnect</span> Dataset.”</span> Compressed
+Data. <em>Library of Congress</em>.
+https://www.loc.gov/item/2020445551/, 2020.
+</div>
+<div id="ref-BooksAllDatabase2024" class="csl-entry" role="listitem">
+<span>“Books <span>All</span> (Database).”</span> <em>The Library of
+Congress Cataloging Distribution Service</em>.
+https://www.loc.gov/cds/products/product.php?productID=5, June 2024.
+</div>
+<div id="ref-casanovaWorldRepublicLetters2004" class="csl-entry"
+role="listitem">
+Casanova, Pascale. <em>The World Republic of Letters</em>. Convergences.
+Cambridge, Mass: Harvard University Press, 2004.
+</div>
+<div id="ref-casperIndustrialBook184018802007" class="csl-entry"
+role="listitem">
+Casper, Scott E., ed. <em>The Industrial Book, 1840-1880</em>. A History
+of the Book in <span>America</span>, v. 3. Chapel Hill: Published in
+association with the American Antiquarian Society by the University of
+North Carolina Press, 2007.
+</div>
+<div id="ref-frednerGettingNineteenthCentury2024" class="csl-entry"
+role="listitem">
+Fredner, Erik. <span>“Getting Nineteenth Century Data from
+<span>Library</span> of <span>Congress</span> Book Records.”</span>
+https://github.com/erikfredner/c19dc, June 2024.
+</div>
+<div id="ref-glazenerLiteratureMakingHistory2016" class="csl-entry"
+role="listitem">
+Glazener, Nancy. <em>Literature in the Making: A History of
+<span>U</span>.<span>S</span>. Literary Culture in the Long Nineteenth
+Century</em>. Oxford Studies in <span>American</span> Literary History.
+New York, NY: Oxford University Press, 2016.
+</div>
+<div id="ref-glazenerReadingRealismHistory1997" class="csl-entry"
+role="listitem">
+———. <em>Reading for Realism: The History of a
+<span>U</span>.<span>S</span>. Literary Institution, 1850-1910</em>. New
+<span>Americanists</span>. Durham: Duke University Press, 1997.
+</div>
+<div id="ref-goodmanWilliamDeanHowells2005" class="csl-entry"
+role="listitem">
+Goodman, Susan, and Carl Dawson. <em>William <span>Dean Howells</span>:
+A Writer’s Life</em>. Berkeley: University of California Press, 2005.
+</div>
+<div id="ref-kaestlePrintMotionExpansion2009" class="csl-entry"
+role="listitem">
+Kaestle, Carl F., and Janice A. Radway, eds. <em>Print in Motion: The
+Expansion of Publishing and Reading in the <span>United States</span>,
+1880-1940</em>. A History of the Book in <span>America</span>, v. 4.
+Chapel Hill: Published in association with the American Antiquarian
+Society by the University of North Carolina Press, 2009.
+</div>
+<div id="ref-LibraryCongressClassification2024" class="csl-entry"
+role="listitem">
+<span>“Library of <span>Congress Classification Outline</span>.”</span>
+<em>Library of Congress</em>. https://www.loc.gov/catdir/cpso/lcco/, May
+2024.
+</div>
+</div>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="#ref-casanovaWorldRepublicLetters2004"
+role="doc-biblioref">Pascale Casanova, <em>The World Republic of
+Letters</em>, Convergences (Cambridge, Mass: Harvard University Press,
+2004)</a>.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><span class="citation"
+data-cites="glazenerReadingRealismHistory1997">Nancy Glazener, <a
+href="#ref-glazenerReadingRealismHistory1997"
+role="doc-biblioref"><em>Reading for Realism: The History of a
+<span>U</span>.<span>S</span>. Literary Institution, 1850-1910</em>, New
+<span>Americanists</span> (Durham: Duke University Press,
+1997)</a></span>, 5. See also <span class="citation"
+data-cites="glazenerLiteratureMakingHistory2016">Nancy Glazener, <a
+href="#ref-glazenerLiteratureMakingHistory2016"
+role="doc-biblioref"><em>Literature in the Making: A History of
+<span>U</span>.<span>S</span>. Literary Culture in the Long Nineteenth
+Century</em>, Oxford Studies in <span>American</span> Literary History
+(New York, NY: Oxford University Press, 2016)</a></span>.<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>See, e.g., <span class="citation"
+data-cites="bentleyLiteraryFormsMass2005a">Nancy Bentley, <a
+href="#ref-bentleyLiteraryFormsMass2005a"
+role="doc-biblioref"><span>“Literary <span>Forms</span> and <span>Mass
+Culture</span>, 1870–1920,”</span> in <em>The <span>Cambridge
+History</span> of <span>American Literature</span>: <span>Volume</span>
+3: <span>Prose</span> Writing, 1860–1920</em>, ed. Sacvan Bercovitch,
+vol. 3, The <span>Cambridge History</span> of <span>American
+Literature</span> (Cambridge: Cambridge University Press, 2005),
+65–286</a></span>, 250. This symbolically important move cannot be
+pinned to a single year since, between 1886 and 1891, Howells moves back
+and forth between Boston and New York several times. <span
+class="citation" data-cites="goodmanWilliamDeanHowells2005">Susan
+Goodman and Carl Dawson, <a href="#ref-goodmanWilliamDeanHowells2005"
+role="doc-biblioref"><em>William <span>Dean Howells</span>: A Writer’s
+Life</em> (Berkeley: University of California Press, 2005)</a></span>,
+xxiv, 279.<a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><a href="#ref-casperIndustrialBook184018802007"
+role="doc-biblioref">Scott E. Casper, ed., <em>The Industrial Book,
+1840-1880</em>, A History of the Book in <span>America</span>, v. 3
+(Chapel Hill: Published in association with the American Antiquarian
+Society by the University of North Carolina Press, 2007)</a>; <a
+href="#ref-kaestlePrintMotionExpansion2009" role="doc-biblioref">Carl F.
+Kaestle and Janice A. Radway, eds., <em>Print in Motion: The Expansion
+of Publishing and Reading in the <span>United States</span>,
+1880-1940</em>, A History of the Book in <span>America</span>, v. 4
+(Chapel Hill: Published in association with the American Antiquarian
+Society by the University of North Carolina Press, 2009)</a>.<a
+href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p><span class="citation"
+data-cites="BooksAllMDSConnect2020"><a
+href="#ref-BooksAllMDSConnect2020" role="doc-biblioref"><span>“Books All
+: <span>MDSConnect</span> Dataset,”</span> Compressed Data, <em>Library
+of Congress</em> (https://www.loc.gov/item/2020445551/,
+2020)</a></span>. Thanks to Jaime Mears specifically and LC Labs
+generally for informing me about this dataset, as well as directing me
+to past work using this data by Matt Miller and Jer Thorp.<a
+href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>OCLC’s WorldCat might be more comprehensive, but access
+is limited.<a href="#fnref6" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p><a href="#ref-BooksAllDatabase2024"
+role="doc-biblioref"><span>“Books <span>All</span> (Database),”</span>
+<em>The Library of Congress Cataloging Distribution Service</em>
+(https://www.loc.gov/cds/products/product.php?productID=5, June
+2024)</a>.<a href="#fnref7" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p><a href="#ref-LibraryCongressClassification2024"
+role="doc-biblioref"><span>“Library of <span>Congress Classification
+Outline</span>,”</span> <em>Library of Congress</em>
+(https://www.loc.gov/catdir/cpso/lcco/, May 2024)</a>.<a href="#fnref8"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p><a href="#ref-frednerGettingNineteenthCentury2024"
+role="doc-biblioref">Erik Fredner, <span>“Getting Nineteenth Century
+Data from <span>Library</span> of <span>Congress</span> Book
+Records”</span> (https://github.com/erikfredner/c19dc, June 2024)</a>.<a
+href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
