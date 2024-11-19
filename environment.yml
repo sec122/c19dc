@@ -7,4 +7,5 @@ dependencies:
   - bs4
   - ipykernel
   - thefuzz
+  - matplotlib
 prefix: /opt/homebrew/anaconda3/envs/c19dc

@@ -1,0 +1,11 @@
+column_name	long_name	description	reference
+lccn	Library of Congress control number		https://www.loc.gov/marc/bibliographic/bd010.html
+classifications	Library of Congress call number(s)		https://www.loc.gov/marc/bibliographic/bd050.html
+ps_digits	PS digits	First digits following PS prefix in LC Call Number	https://www.loc.gov/aba/cataloging/classification/lcco/
+first_author	First author	First author given in Main Entry-Personal Name	https://www.loc.gov/marc/bibliographic/bd100.html
+title	Title statement		https://www.loc.gov/marc/bibliographic/bd245.html
+publishers	"Publication, distribution, etc. (imprint)"	$b	https://www.loc.gov/marc/bibliographic/bd260.html
+min_year	Minimum record year	"Earliest reported publication date in any publication field (260$c, 264$c)"	https://www.loc.gov/marc/bibliographic/bd264.html
+places	"Place(s) of production, publication, distribution, manufacture"	Distinct values in 260$a and 264$a	https://www.loc.gov/marc/bibliographic/bd260.html
+multiple_places	Multiple places of publication?	True/False indicating whether a record has multiple places of publication	
+target_city	Target city	Normalized representation of city referenced in place of publication. One work may have multiple target cities depending on the number of locations given in `places`	
