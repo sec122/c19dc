@@ -23,6 +23,10 @@ MDSConnect is the LC's open access MARC records dataset.
 
 The essay and dataset are both available in plain text formats (`.qmd` and `.csv` respectively). The essay is also available as [Quarto](https://quarto.org)-rendered `.html` or `.pdf` documents.
 
+## About this repo
+
+This repository follows the conventions [outlined here](https://goodresearch.dev).
+
 ## Local reproduction and customization
 
 This code has been tested on macOS 15.1 (24B83) with the `conda` environment indicated in `environment.yml`
