@@ -6,14 +6,14 @@ The code can be modified to extract data from any [MARC record fields](https://w
 
 ## Basic information about the dataset
 
-Places of publication for C19 US literature books
-Data source: <https://lccn.loc.gov/2020445551>
-Data analysis: Erik Fredner
-Languages: Primarily English, though some titles in other languages
+- Normalized places of publication for C19 US literature books
+- Original data source: <https://lccn.loc.gov/2020445551>
+- Data analysis: Erik Fredner
+- Dataset languages: Primarily English, though some titles in other languages
 
 ## Data structure
 
-See the `data` folder in this repository for the data set (`data.csv`) and a data dictionary (`data_dictionary.csv`) describing its columns. All transformatons to the MDSConnect Books All dataset are recorded in this repository.
+See the `data` folder in this repository for the dataset (`data.csv`) and a data dictionary (`data_dictionary.csv`) describing its columns. All transformatons to the MDSConnect Books All dataset are recorded in this repository.
 
 ## Ethics
 
@@ -21,7 +21,7 @@ MDSConnect is the LC's open access MARC records dataset.
 
 ## Format
 
-The essay and dataset are both available in plain text formats (`.qmd` and `.csv` respectively).
+The essay and dataset are both available in plain text formats (`.qmd` and `.csv` respectively). The essay is also available as [Quarto](https://quarto.org)-rendered `.html` or `.pdf` documents.
 
 ## Local reproduction and customization
 
@@ -35,9 +35,9 @@ This code has been tested on macOS 15.1 (24B83) with the `conda` environment ind
 
 ### Original use
 
-- As written, this identifies and extracts LC `"PS..."` records in the American literature range.
+- As written, this identifies and extracts LC `"PS..."` records in the American literature range from the complete books dataset.
 - It also extacts publication information, including first author, title, publication place, and year, as visibile in `data/data.csv`
-- It then normalizes place names and publication years to analyze the changing imprint geographies of US literature.
+- It then normalizes place names and publication years to measure the changing imprint geographies of US literature.
 
 ### How to modify
 
