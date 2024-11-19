@@ -1,7 +1,6 @@
 # ignored
 .DS_Store
 *.json
-*.pdf
 *.docx
 
 # Byte-compiled / optimized / DLL files
