@@ -1,0 +1,10 @@
+name: c19dc
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - pandas
+  - bs4
+  - ipykernel
+  - thefuzz
+prefix: /opt/homebrew/anaconda3/envs/c19dc
