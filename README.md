@@ -18,6 +18,8 @@ Website: https://fredner.org/
 # Sharing/Access Information: 
 Licenses/restrictions placed on the data: CC0-1.0 [Creative Commons Universal](https://creativecommons.org/publicdomain/zero/1.0/) 
 
+Licenses/restrictions placed on the code: MIT [The MIT License](https://opensource.org/license/mit)
+
 Other publicly accessible locations of the data: <https://github.com/erikfredner/c19dc>
 
 Data Derived from: <https://lccn.loc.gov/2020445551>
