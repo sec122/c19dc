@@ -1,4 +1,30 @@
-# Getting nineteenth century data from Library of Congress book records
+This README file was generated on 2024-06-25 by (author) Erik Fredner and last modified on 2024-12-04 by (data curator) Sarah Reiff Conell 
+
+# Title of Dataset: 
+Moving the Capital of US Literature from Boston to New York: Evidence from 11 million Library of Congress Records 
+
+## Author Information: 
+
+Name: Erik Fredner
+
+Institution: University of Richmond 
+
+ORCID: [0000-0002-2993-4961](https://orcid.org/0000-0002-2993-4961)
+
+Email: erik.fredner@richmond.edu
+
+Website: https://fredner.org/
+
+# Sharing/Access Information: 
+Licenses/restrictions placed on the data: CC0-1.0 [Creative Commons Universal](https://creativecommons.org/publicdomain/zero/1.0/) 
+
+Other publicly accessible locations of the data: <https://github.com/erikfredner/c19dc>
+
+Data Derived from: <https://lccn.loc.gov/2020445551>
+
+# Methods:
+
+## Getting nineteenth century data from Library of Congress book records
 
 This repository contains code and data supporting the essay "Moving the Capital of US Literature from Boston to New York: Evidence from 11 million Library of Congress records," which will be published by [the Nineteenth Century Data Collective](https://c19datacollective.com/).
 
@@ -26,6 +52,8 @@ The essay and dataset are both available in plain text formats (`.qmd` and `.csv
 ## About this repo
 
 This repository follows the conventions [outlined here](https://goodresearch.dev).
+
+Patrick J Mineault & The Good Research Code Handbook Community (2021). *The Good Research Code Handbook*. Zenodo. doi:10.5281/zenodo.5796873.
 
 ## Local reproduction and customization
 
@@ -65,3 +93,31 @@ For example, while almost all works have a four-digit year of publication, some 
 ## AI Statement
 
 I used GitHub Copilot completions in writing some of this code.
+
+# File and Folder Directory: 
+```
+├── data
+│   ├── data.csv
+│   ├── data_dictionary.csv
+├── docs
+│   ├── essay.html
+│   ├── essay.pdf
+│   ├── essay.qmd
+├── results
+│   ├── lc_ps.png
+│   ├── lc_ps_pct.png
+│   ├── moby.png
+├── scripts
+│   ├── 1 Get LC Data.ipynb
+│   ├── 2 Clean LC Data.ipynb
+│   ├── 3 Visualize LC Data.ipynb 
+├── src
+│   ├── __init__.py
+│   ├── data_cleaning.py
+│   ├── data_collection.py
+├── .gitignore
+├── README.md
+├── environment.yml
+```
+## Data Specific Information: 
+Variables and Abbreviations can be found in data_dictionary.csv 
