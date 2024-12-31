@@ -1,4 +1,4 @@
-This README file was generated on 2024-06-25 by (author) Erik Fredner and last modified on 2024-12-04 by (data curator) Sarah Reiff Conell 
+This README file was generated on 2024-06-25 by (author) Erik Fredner and last modified on 2024-12-31 by (data curator) Sarah Reiff Conell 
 
 # Title of Dataset: 
 Moving the Capital of US Literature from Boston to New York: Evidence from 11 million Library of Congress Records 
