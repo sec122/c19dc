@@ -28,7 +28,7 @@ Data Derived from: <https://lccn.loc.gov/2020445551>
 
 ## Getting nineteenth century data from Library of Congress book records
 
-This repository contains code and data supporting the essay "Moving the Capital of US Literature from Boston to New York: Evidence from 11 million Library of Congress records," which will be published by [the Nineteenth Century Data Collective](https://c19datacollective.com/).
+This data publication contains code and data for "Moving the Capital of US Literature from Boston to New York: Evidence from 11 million Library of Congress records," published by [the Nineteenth Century Data Collective](https://c19datacollective.com/).
 
 The code can be modified to extract data from any [MARC record fields](https://www.loc.gov/marc/bibliographic/) from any [Library of Congress Classification Outline](https://www.loc.gov/aba/cataloging/classification/lcco/) range available in the [MDSConnect "Books All"](https://lccn.loc.gov/2020445551) dataset.
 
